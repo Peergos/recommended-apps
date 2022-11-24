@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>App Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+</head>
+<body>
+
+<div class="w3-main" style="margin-left:100px">
+
+<div id="screenshot-modal" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <b onclick="document.getElementById('screenshot-modal').style.display='none'" class="w3-transparent w3-button w3-xlarge w3-right">X</b>
+      	<img id="screenshot" style="width:90%">
+    </div>
+  </div>
+</div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Installation Instructions</h1>
+      	<p>
+            From the App Gallery listings below click 'Install link' to navigate to application folder, open the context menu for the file 'peergos-app.json' and select 'Install App'
+    	</p>
+    </div>
+  </div>
+
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">CK-Editor</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/ckeditor/ckeditor5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>Rich text editor. Loads/Saves .html files</p>
+		<p>Install link: <a class="url-link" href="./ck-editor">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+      	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/ck-editor.png');">
+      		<img src="./screenshots/ck-editor.png" style="width:90%">
+    	</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">TUI Markdown WYSIWYG Markdown Editor</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/nhn/tui.editor" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>Edit Markdown (.md) files</p>
+		<p>Install link: <a class="url-link" href="./tui-markdown-editor">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/markdown.png');">
+	      	<img src="./screenshots/markdown.png" style="width:90%">
+    	</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">TUI Image Editor</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/nhn/tui.image-editor" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>Edit Image files</p>
+		<p>Install link: <a class="url-link" href="./tui-image-editor">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/image-editor.png');">
+	      	<img src="./screenshots/image-editor.png" style="width:90%">
+    	</button>
+      </p>
+    </div>
+  </div>
+   
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">TodoMVC</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/1Marc/todomvc-vanillajs-2022" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>Todo List</p>
+		<p>Install link: <a class="url-link" href="./todoMVC">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/todo.png');">
+	      	<img src="./screenshots/todo.png" style="width:90%">
+    	</button>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Winamp 2</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/captbaritone/webamp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>Winamp 2 implemented in JavaScript</p>
+		<p>Play mp3 and ogg audio files</p>
+		<p>Install link: <a class="url-link" href="./winamp">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/winamp.png');">
+	      	<img src="./screenshots/winamp.png" style="width:90%">
+    	</button>      	
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">TiddlyWiki 5</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/Jermolene/TiddlyWiki5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>A non-linear personal web notebook</p>
+		<p>Install link: <a class="url-link" href="./tiddlywiki">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/tiddlyWiki.png');">
+	      	<img src="./screenshots/tiddlyWiki.png" style="width:90%">
+    	</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Chess</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/webxdc/ChessBoard.xdc" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+		<p>Play a game of Chess</p>
+		<p>Install link: <a class="url-link" href="./chess">folder</a></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/chess.png');">
+	      	<img src="./screenshots/chess.png" style="width:90%">
+    	</button>
+      </p>
+    </div>
+  </div>
+  
+  
+</div>
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l1" style="text-align: center;">
+      <p>Find more apps here: <a href="https://github.com/Peergos/example-apps" target="_blank" rel="noopener noreferrer">example-apps</a></p>
+    </div>
+  </footer>
+<script>
+
+function showScreenshot(imagePathAndFile) {
+	document.getElementById('screenshot').src = imagePathAndFile;
+	document.getElementById('screenshot-modal').style.display='block'
+
+}
+</script>
+</body>
+</html>
