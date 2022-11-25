@@ -1,1 +1,1 @@
-# app-gallery
+# Suggested Apps
