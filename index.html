@@ -21,21 +21,11 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Installation Instructions</h1>
-      	<p>
-            From the App listings below click 'Install link' to navigate to application folder, open the context menu for the file 'peergos-app.json' and select 'Install App'
-    	</p>
-    </div>
-  </div>
-
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">CK-Editor</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/ckeditor/ckeditor5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Rich text editor. Loads/Saves .html files</p>
 		<p>See doc2html app below to convert other document formats to html</p>
-		<p>Install link: <a class="url-link" href="./ck-editor">folder</a></p>
+		<p><button onclick="install('ck-editor');">Install</button></p>
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -50,12 +40,12 @@
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Doc2Html</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/mwilliamson/mammoth.js/" target="_blank" rel="noopener noreferrer">GitHub</a>
-						<a class="url-link" href="https://github.com/xwiki-labs/office-converter" target="_blank" rel="noopener noreferrer">GitHub</a>
+						&amp; <a class="url-link" href="https://github.com/xwiki-labs/office-converter" target="_blank" rel="noopener noreferrer">GitHub</a>
 		</p>
 		<p>Convert Microsoft Word (.docx), LibreOffice Writer (.odt) files to .html</p>
 		<p>The document viewer App has higher fidelity for viewing a .docx or .odt file</p>
 		<p>output .html file can be viewed standalone or edited with ck-editor</p>
-		<p>Install link: <a class="url-link" href="./doc2html">folder</a></p>
+		<p><button onclick="install('doc2html');">Install</button></p>
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -70,10 +60,10 @@
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Document Viewer</h1>
 		<p>Project page: <a class="url-link" href="https://VolodymyrBaydalka/docxjs" target="_blank" rel="noopener noreferrer">GitHub</a>
-						<a class="url-link" href="https://github.com/xwiki-labs/office-converter" target="_blank" rel="noopener noreferrer">GitHub</a>
+						&amp; <a class="url-link" href="https://github.com/xwiki-labs/office-converter" target="_blank" rel="noopener noreferrer">GitHub</a>
 		</p>
 		<p>View Microsoft Word (.docx), LibreOffice Writer (.odt) files</p>
-		<p>Install link: <a class="url-link" href="./doc-viewer">folder</a></p>
+		<p><button onclick="install('doc-viewer');">Install</button></p>
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -89,7 +79,7 @@
       <h1 class="w3-text-teal">TUI Markdown WYSIWYG Markdown Editor</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/nhn/tui.editor" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Edit Markdown (.md) files</p>
-		<p>Install link: <a class="url-link" href="./tui-markdown-editor">folder</a></p>
+		<p><button onclick="install('tui-markdown-editor');">Install</button></p>		
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -105,7 +95,7 @@
       <h1 class="w3-text-teal">Tldraw Whiteboard</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/tldraw/tldraw" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Edit .tldr files</p>
-		<p>Install link: <a class="url-link" href="./tldraw">folder</a></p>
+		<p><button onclick="install('tldraw');">Install</button></p>				
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -121,7 +111,7 @@
       <h1 class="w3-text-teal">TUI Image Editor</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/nhn/tui.image-editor" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Edit Image files</p>
-		<p>Install link: <a class="url-link" href="./tui-image-editor">folder</a></p>
+		<p><button onclick="install('tui-image-editor');">Install</button></p>						
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -136,8 +126,8 @@
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">PaintZ MS Paint clone</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/zmyaro/paintz" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-		<p>Edit jpg/png files</p>
-		<p>Install link: <a class="url-link" href="./paintz">folder</a></p>
+		<p>Edit .jpg &amp; .png image files</p>
+		<p><button onclick="install('paintz');">Install</button></p>								
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -152,11 +142,11 @@
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">LuckySheet Spreadsheet</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/dream-num/Luckysheet" target="_blank" rel="noopener noreferrer">GitHub</a>
-						<a class="url-link" href="https://github.com/xwiki-labs/office-converter" target="_blank" rel="noopener noreferrer">GitHub</a>
+						&amp; <a class="url-link" href="https://github.com/xwiki-labs/office-converter" target="_blank" rel="noopener noreferrer">GitHub</a>
 		</p>		
 		<p>Data is stored in a a json formatted file with extension .sheet</p>
-		<p>Can import to some degree .xlsx, .ods spreadsheet files</p>
-		<p>Install link: <a class="url-link" href="./luckysheet">folder</a></p>
+		<p>Can import to some degree .xlsx &amp; .ods spreadsheet files</p>
+		<p><button onclick="install('luckysheet');">Install</button></p>										
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -172,7 +162,7 @@
       <h1 class="w3-text-teal">TodoMVC</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/1Marc/todomvc-vanillajs-2022" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Todo List</p>
-		<p>Install link: <a class="url-link" href="./todoMVC">folder</a></p>
+		<p><button onclick="install('todoMVC');">Install</button></p>												
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -189,8 +179,8 @@
       <h1 class="w3-text-teal">Winamp 2</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/captbaritone/webamp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Winamp 2 implemented in JavaScript</p>
-		<p>Play mp3 and ogg audio files</p>
-		<p>Install link: <a class="url-link" href="./winamp">folder</a></p>
+		<p>Play .mp3 &amp; .ogg audio files</p>
+		<p><button onclick="install('winamp');">Install</button></p>														
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -207,7 +197,7 @@
 		<p>Project page: <a class="url-link" href="https://github.com/Jermolene/TiddlyWiki5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>A non-linear personal web notebook</p>
 		<p>Start by downloading empty.html from TiddlyWiki <a class="url-link" href="https://tiddlywiki.com/" target="_blank" rel="noopener noreferrer">website</a></p>
-		<p>Install link: <a class="url-link" href="./tiddlywiki">folder</a></p>
+		<p><button onclick="install('tiddlywiki');">Install</button></p>																
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -223,7 +213,7 @@
       <h1 class="w3-text-teal">Chess</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/webxdc/ChessBoard.xdc" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 		<p>Play a game of Chess</p>
-		<p>Install link: <a class="url-link" href="./chess">folder</a></p>
+		<p><button onclick="install('chess');">Install</button></p>																		
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-16 w3-center">
@@ -243,6 +233,15 @@
   </footer>
 <script>
 
+function install(appName) {
+    let data = new FormData();
+	data.append('path', '/peergos/recommended-apps');
+	data.append('appName', appName);
+	fetch('/peergos-api/v0/install-app/', { method: 'POST', headers: {}, body: data }).then(function(response) {
+		console.log('installing: ' + appName);
+	});
+}
+                
 function showScreenshot(imagePathAndFile) {
 	document.getElementById('screenshot').src = imagePathAndFile;
 	document.getElementById('screenshot-modal').style.display='block'
