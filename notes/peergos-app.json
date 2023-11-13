@@ -1,0 +1,12 @@
+{
+    "displayName": "Notes",
+    "description": "Block-style editor based on Editor.js - https://github.com/codex-team/editor.js",
+    "version": "1.0.0",
+    "author": "peergos",
+    "launchable": true,
+    "folderAction": false,  
+    "appIcon": "icon.png",			  			
+    "fileExtensions": ["note"],	    	
+    "permissions": ["EDIT_CHOSEN_FILE"]
+}
+
