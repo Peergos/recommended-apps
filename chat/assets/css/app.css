@@ -193,12 +193,15 @@ svg.icon {
   border-bottom:1px solid #c4c4c4;
 }
 
-.chat-action-heading {
+.chatactionheadingmobile {
+  float: left;
+}
+.chatactionheading {
   float: left;
   width:40%;
 }
 
-.chat-action-heading h4 {
+.chatactionheading h4 {
   color: #05728f;
   font-size: 21px;
   margin: auto;
