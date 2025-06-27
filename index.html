@@ -436,12 +436,30 @@ hr.solid {
     </div>
   </div>
   
+  <div id="photo-roll" class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><img class="app-logo" src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADE0lEQVR4nO2aT2vUQByGn9Utra2KFaTe1Fpd9eDBk5d6tD3Yg9AP0IP6FQSvxT/QHvQDiGgRj23Bg/+q3uzJkwoWEYVaK0KFXU+tEg8ZMfvb2WSSTJKNOw8MIcnMO795k8xkJgGHw+FwOByOZo4Bi0AD8EqeGsACUIvT+B8dELjttGFqwmKEUFyKbngwLcjgKpqAG8DOkAbpyoSRxLSsaAC7ozJFuRgXncYHoJpAKwmx48/DgKkEOkmxbkDalOfVR1N/7AK205SNVsUg1ACTKxG30ysV24oOoGicAUUHUDQmfUAnvchYx90BOde3DjwEHgMfgW/q+BAwDIwB54D9OcfVRBZj/3fgMtBrUH8PcAn4mlEsuRvwDBg0qViwF1gquwF3SPeY9SiNUhrwBH3jR4BrwDKwqtIr4CpwWJO/CjwtmwGrwB6hux24AWyGlNsErqu8QQaBL2Uy4ILQrOKvxpiWX9CYcLEsBnyi9dafFXnmgVGgHzjdRmdWaFSVdscbcFPonQB+Bc5fEefbGbAFHBd5b5XBgLMhQc+rY73ADNFjvTRzvAwGjAi9t4Fzo+rYjKHWG6F1pAwGDAi94MeVfnVs3VCrLrR22TYgi7mArCQ44TqptkOGWnIk+J0oopikdfiQ0FtJobUitIYtxNdEFtPhA2L/ZQqtF2L/YAotLVkYMCb2b2PY+Qg8VTaIHGEyIe0t9o7WleR7CXTuCo2K0rb6CGRhgAdMCs1+/MmPafll/o0Yf5m0FFsuBrwH+oTuAPDAoOx9WofSPtJ1prkb4AFz6D+qnFGNXAvkXVPHRjX5K+qcrbhyM8ADpiPq6lEpjGnLMUViszIP/7bfYVKxoBf7q0GFGODhv9NPxGj8BM1ziMwM0D2jRi4l5DX+jPAR8Bl/tRhgH/4L1DhwHjiVYQyVtjuKLA2QbKltVD9gk44yoAia2twN/weEXtCu/zboDCg6gKLR9QE/af5R8n/qFOUSm/YOWMohkKJ4bpKphv9jcRZvYUWmDeCoqVM1/M9T9Q4IPG2qq7YYN97hcDgcDkd38AcxG7sW+YbWCwAAAABJRU5ErkJggg=='/> Photo Roll</h1>
+		<p>Project page: <a class="url-link" href="https://github.com/Peergos/example-apps#photo-roll" target="_blank" rel="noopener noreferrer">GitHub</a>
+		</p>		
+		<p>Share and comment on photos</p>
+		<p><button onclick="install('photo-roll');">Install</button></p>										
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-16 w3-center">
+    	<button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="showScreenshot('./screenshots/photo-roll.png');">
+	      	<img src="./screenshots/photo-roll.png" style="width:90%" >
+    	</button>
+      </p>
+    </div>
+  </div>
+
+
   <div id="email-client" class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal"><img class="app-logo" src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAC+ElEQVR4nO2av2sUQRTHPwkYfxA0RRpFBTEI6h+giAGNQUUwiUVKTXdiaZVGUVDxT4hgpwS0U7BXooUQYqEgVpYSAorGO+Q03lnMLOQmb3fmNjO7GzMfeMXtznvz3vduZ9/sLUQikUgkEolEIpFIJxPAHNAA2hvUGrqG8W6Lv1eB5H3bXdfiJyqQbCgbcxFgrgKJhrJXLgLUDaeTLk4V5Tidtfx0cTJV2xkquwLoYW09HfQ6BNnnOaki2WYb4CLAQQ+JlMUR2wAXAc57SKQsLudxMq+ZH8Auj0kVxR7gF5Y1QEK6fTwIk2NQHiHXYkVyagFng6QZhiuk9wJW0hy/AccCJOubE6ztZbwI0AaWgVO+M/bIaVSzk1WDFVs7+QeY9py4D2pAE3v+VkyH6ZRAj4EdPivIyVbgIXKOt4RjViSHa8Bf4dw74ICfOnKxF3gr5NUCrusxXgQAmEStAeb5JWBkfXXkYkTPLa1Tk6vGeRMA4BDwQRizgrpUenKV0j014LeQxyfgqDHWqwAA/cATYVwbeE7Y3WM/8DRl7mfIHat3ARKyvoXDLhN1yRDwXpgvuSul/fqCCQAwDHwRfJaBSy6TOXIB1YhJ688Zi29QAUBtOt4Ifi3gNm47zjR6dYyWEP+1nttGcAEA+oAZwbcNvAAGHOOsZkD7SjFngC2OcQoRIOEqcjf2EXUNuzKkfcw4TdTa0w2FCgBqXVgU4nwFRh38R/VY03+RfA9oCxcA1HPEBSHWCnAfdcmY9OlzK4LfAvmfTZYiAMB2YFaI1wY+A1PAbm1T+pg0dlbHyktpAiTUUPdqqbgs89Vdli4AwDnkvj3NlrSPDyohAMAg6tli1p69ibrFDXqctzICJOwHbgLzwHdt88ANfc43mfVI15c5qKgdXigy61lPm/pfEAUoO4GyiQKUnUDZRAGEYw3j80Z+RWbY+Fx3cdr0L0mNVyDRUHbRRQBQLxWWnaxvu+NafMIY6ieT9Vdz1a0OvKSLbz4SiUQikcjm4R+TWWkHw0nLsQAAAABJRU5ErkJggg=='/> Email client</h1>
 		<p>Project page: <a class="url-link" href="https://github.com/Peergos/example-apps#email-client" target="_blank" rel="noopener noreferrer">GitHub</a>
 		</p>		
-		<p>Email client for self-hosted Peergos instances</p>
+		<p>Email client for self-hosted instances</p>
 		<p>For Further details see <a class="url-link" href="https://github.com/Peergos/email-bridge" target="_blank" rel="noopener noreferrer">instructions</a></p>
 		<p><button onclick="install('email-client');">Install</button></p>										
     </div>
