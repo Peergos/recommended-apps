@@ -4,10 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Custom Apps</title>
+<script>
+// Peergos says which theme it's in, in the page's address, as it does for an app. It's read here,
+// before anything is drawn, so the page never shows in the other theme first. Without it - opened
+// on its own, or in a Peergos that doesn't say - the page follows the system's theme.
+(function () {
+	var theme = new URLSearchParams(location.search).get('theme');
+	if (theme != null)
+		document.documentElement.setAttribute('data-theme', theme === 'dark-mode' ? 'dark' : 'light');
+})();
+</script>
 <style>
 /* The colours, corners and type of the Peergos app this page opens inside, on the same ground as
-   the frame around it. It can't see which theme Peergos is in, so it follows the system's, which
-   is also what Peergos follows until a theme is picked by hand. */
+   the frame around it, in the theme Peergos says it's in, or the system's when it doesn't say,
+   which is also what Peergos follows until a theme is picked by hand. */
 :root {
 	--font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 	--page: #ffffff;
@@ -33,8 +43,11 @@
 	--radius-pill: 999px;
 	color-scheme: light;
 }
+/* dark: the system's unless Peergos says light, and Peergos' dark whatever the system's (see the
+   script above). CSS can't join a media query and a selector, so these colours are written twice,
+   here and just below, and change together. */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
 		--page: #2c3e50;
 		--surface: #2c3e50;
 		--surface-2: #22303c;
@@ -51,6 +64,23 @@
 		--shadow: 0 1px 2px rgba(0, 0, 0, .25);
 		color-scheme: dark;
 	}
+}
+:root[data-theme="dark"] {
+	--page: #2c3e50;
+	--surface: #2c3e50;
+	--surface-2: #22303c;
+	--ink: #ffffff;
+	--muted: #a7b6c2;
+	--border: #566571;
+	--border-strong: #a7b6c2;
+	--primary: #63e3bd;
+	--primary-hover: #3fdb9c;
+	--on-primary: #283744;
+	--link: #7fbcf7;
+	--note-bg: #4a3a1d;
+	--note-ink: #fbbf24;
+	--shadow: 0 1px 2px rgba(0, 0, 0, .25);
+	color-scheme: dark;
 }
 
 * {
@@ -469,25 +499,43 @@ a {
 	object-fit: contain;
 }
 
-/* on a dark page an icon drawn in black would all but vanish: every icon sits on a light tile */
+/* on a dark page an icon drawn in black would all but vanish: every icon sits on a light tile.
+   Written twice, as the dark colours are, and the two change together. */
 @media (prefers-color-scheme: dark) {
-	.app__icon,
-	.app__shot--none img,
-	.app__parts img {
+	:root:not([data-theme="light"]) .app__icon,
+	:root:not([data-theme="light"]) .app__shot--none img,
+	:root:not([data-theme="light"]) .app__parts img {
 		padding: 4px;
 		border-radius: var(--radius-control);
 		background-color: #f1f4f7;
 	}
-	.app__parts img {
+	:root:not([data-theme="light"]) .app__parts img {
 		padding: 2px;
 		border-radius: 4px;
 	}
-	.app__shot--none img {
+	:root:not([data-theme="light"]) .app__shot--none img {
 		width: 72px;
 		height: 72px;
 		padding: 8px;
 		border-radius: var(--radius-container);
 	}
+}
+:root[data-theme="dark"] .app__icon,
+:root[data-theme="dark"] .app__shot--none img,
+:root[data-theme="dark"] .app__parts img {
+	padding: 4px;
+	border-radius: var(--radius-control);
+	background-color: #f1f4f7;
+}
+:root[data-theme="dark"] .app__parts img {
+	padding: 2px;
+	border-radius: 4px;
+}
+:root[data-theme="dark"] .app__shot--none img {
+	width: 72px;
+	height: 72px;
+	padding: 8px;
+	border-radius: var(--radius-container);
 }
 
 /* fingers want bigger targets than a pointer does */
